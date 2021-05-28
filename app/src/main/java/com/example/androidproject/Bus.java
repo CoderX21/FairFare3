@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class Bus extends AppCompatActivity {
 
     EditText E1,E2;
-    double result=0;
+    double result=0,Fresult=1;
     public static String stri;
 
     @Override
@@ -24,11 +24,21 @@ public class Bus extends AppCompatActivity {
 
     public void last(View view) {
 
-        result = Double.parseDouble ((E1.getText().toString()))*2.8;
-        stri = "Dear User. Thankyou for using our app Fare Fair.\n\n\n\n The Total amount you have to pay to Bus Conductor is "+result+
-                "\n\n\n We have calculated the average Bus(Non-AC) price of India. The calculation has it's basis on following \n\n Current Petrol Price = 99.12 rs/litre \n Average Bus Price = 2.8 Rs";
+        if (E2.getText().toString().equals("0"))
+        {
+            //Toast.makeText(this,"Minimum Seat Requirment is 1 !!")
+            E2.setError("Minimum Seat Requirment is 1 !!");
+        }
 
-        Intent intent = new Intent(this,Result.class);
-        startActivity(intent);
+        else {
+            result = Double.parseDouble((E1.getText().toString())) * 2.8;
+            Fresult = Double.parseDouble((E2.getText().toString())) * result;
+
+            stri = "Dear User. Thankyou for using our app Fare Fair.\n\n The Total amount you have to pay to Bus Condutor is " + Fresult +"\n One have to pay the amount of "+result+
+                    " \n\n  We have calculated the average Bus price of India. The calculation has it's basis on following \n\n Current Petrol Price = 99.12 rs/litre \n Average Bus Price = 2.8 Rs\n Total No of Peoples = " + E2.getText().toString();
+
+            Intent intent = new Intent(this, Result.class);
+            startActivity(intent);
+        }
     }
 }

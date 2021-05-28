@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Taxi extends AppCompatActivity {
 
     EditText E1,E2;
-    double result=0;
+    double result=0,Fresult=1;
     public static String str;
 
 
@@ -21,16 +22,27 @@ public class Taxi extends AppCompatActivity {
 
         E1=(EditText)findViewById(R.id.dist);
         E2=(EditText)findViewById(R.id.seat);
+
+
     }
 
     public void last(View view) {
 
-        result = Double.parseDouble ((E1.getText().toString()))*14.52;
-        str = "Dear User. Thankyou for using our app Fare Fair.\n\n\n\n The Total amount you have to pay to taxi driver is "+result+
-                "\n\n\n We have calculated the average taxi price of India. The calculation has it's basis on following \n\n Current Petrol Price = 99.12 rs/litre \n Average Taxi Price = 14.53 Rs";
+        if (E2.getText().toString().equals("0"))
+        {
+            //Toast.makeText(this,"Minimum Seat Requirment is 1 !!")
+            E2.setError("Minimum Seat Requirment is 1 !!");
+        }
 
-        Intent intent = new Intent(this,Result.class);
-        startActivity(intent);
+        else {
+            result = Double.parseDouble((E1.getText().toString())) * 14.52;
+            Fresult = Double.parseDouble((E2.getText().toString())) * result;
 
+            str = "Dear User. Thankyou for using our app Fare Fair.\n\n The Total amount you have to pay to taxi driver is " + Fresult +"\n One have to pay the amount of "+result+
+                    " \n\n  We have calculated the average taxi price of India. The calculation has it's basis on following \n\n Current Petrol Price = 99.12 rs/litre \n Average Taxi Price = 14.53 Rs\n Total No of Peoples = " + E2.getText().toString();
+
+            Intent intent = new Intent(this, Result.class);
+            startActivity(intent);
+        }
     }
 }

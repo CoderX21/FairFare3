@@ -42,4 +42,10 @@ public class Result extends AppCompatActivity {
         Intent intent=new Intent(this,TakeDistance.class);
         startActivity(intent);
     }
+
+    public void about(View view) {
+
+        Toast.makeText(this,"This App is Developed By\n\n 31.Vaibhav Chaudhari\n 36.Yash Dharmadhikari \n39.Bhushan Baviskar \n46.Chetna Patil\n\n Thank you FOR Using Our App",Toast.LENGTH_LONG).show();
+
+    }
 }

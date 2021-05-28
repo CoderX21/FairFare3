@@ -65,6 +65,8 @@
         android:layout_marginBottom="201dp"
         android:onClick="last"
         android:text="Fair Fare"
+        android:textColor="#F3F0F1"
+        android:background="#F10808"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
