@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidProject</string>
+    <string name="Name">नाव - </string>
+    <string name="Phone">फोन -</string>
+    <string name="Email">ईमेल -</string>
+    <string name="submit">प्रस्तुत </string>
+    <string name="fairfare">Fair Fare</string>
+    <string name="taxi">टॅक्सी</string>
+    <string name="edist">अंतर प्रविष्ट करा</string>
+    <string name="nseat">जागा संख्या</string>
+    <string name="bus">बस</string>
+    <string name="rickshaw">रिक्षा</string>
+    <string name="result">निकाल</string>
+    <string name="menu">मेनूवर परत</string>
+    <string name="exit">बाहेर पडा</string>
+    <string name="about">आमची महिती</string>
+    <string name="hname">नाव प्रविष्ट करा</string>
+    <string name="hph">फोन नंबर प्रविष्ट करा</string>
+    <string name="he">ईमेल प्रविष्ट करा</string>
+    <string name="choise">कोणतीही प्रतिमा निवडा</string>
+
+</resources>

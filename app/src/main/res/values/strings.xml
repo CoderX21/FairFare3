@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">AndroidProject</string>
+    <string name="Name">Name-</string>
+    <string name="Phone">Phone-</string>
+    <string name="Email">Email-</string>
+    <string name="submit">Submit</string>
+    <string name="fairfare">Fair Fare</string>
+    <string name="taxi">T-A-X-I</string>
+    <string name="edist">Enter Distance</string>
+    <string name="nseat">No of seats</string>
+    <string name="bus">B-U-S</string>
+    <string name="rickshaw">R-I-C-K-S-H-A-W</string>
+    <string name="result">Result</string>
+    <string name="menu">Back To Menu</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+    <string name="hname">Enter the Name</string>
+    <string name="hph">Enter Phone No</string>
+    <string name="he">Enter Email</string>
+    <string name="choise">Select Any Image</string>
+
+
 </resources>

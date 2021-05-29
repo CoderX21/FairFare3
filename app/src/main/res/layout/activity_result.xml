@@ -12,8 +12,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
+        android:text="@string/result"
         android:textSize="35dp"
+        android:textColor="@color/black"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +30,7 @@
         android:layout_marginTop="56dp"
         android:ems="15"
         android:textStyle="bold"
+        android:textColor="@color/black"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
@@ -47,7 +49,7 @@
         android:layout_marginRight="24dp"
         android:layout_marginBottom="92dp"
         android:onClick="exit"
-        android:text="Exit"
+        android:text="@string/exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -59,7 +61,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="92dp"
         android:onClick="menu"
-        android:text="Back to menu"
+        android:text="@string/menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -70,7 +72,7 @@
         android:layout_marginStart="33dp"
         android:layout_marginLeft="33dp"
         android:layout_marginBottom="34dp"
-        android:text="About"
+        android:text="@string/about"
         android:onClick="about"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button5" />

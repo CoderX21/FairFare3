@@ -31,8 +31,8 @@ public class Bus extends AppCompatActivity {
         }
 
         else {
-            result = Double.parseDouble((E1.getText().toString())) * 2.8;
-            Fresult = Double.parseDouble((E2.getText().toString())) * result;
+            result = Integer.parseInt((E1.getText().toString())) * 2.8;
+            Fresult = Integer.parseInt((E2.getText().toString())) * result;
 
             stri = "Dear User. Thankyou for using our app Fare Fair.\n\n The Total amount you have to pay to Bus Condutor is " + Fresult +"\n One have to pay the amount of "+result+
                     " \n\n  We have calculated the average Bus price of India. The calculation has it's basis on following \n\n Current Petrol Price = 99.12 rs/litre \n Average Bus Price = 2.8 Rs\n Total No of Peoples = " + E2.getText().toString();

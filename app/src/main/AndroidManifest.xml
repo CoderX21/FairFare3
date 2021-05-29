@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject">
-        <activity android:name=".Result"></activity>
+        <activity android:name=".AutoDistance"></activity>
+        <activity android:name=".CalDistance" />
+        <activity android:name=".Result" />
         <activity android:name=".rickshaw" />
         <activity android:name=".Bus" />
         <activity android:name=".Taxi" />

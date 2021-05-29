@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this,"Welcome "+Name,Toast.LENGTH_LONG).show();
 
-        Intent intent=new Intent(this,TakeDistance.class);
+        Intent intent=new Intent(this,CalDistance.class);
         startActivity(intent);
 
     }
